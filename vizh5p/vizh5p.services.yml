@@ -1,0 +1,6 @@
+services:
+  vizh5p.db_logic:
+    class: Drupal\vizh5p\savetoDB
+    arguments: ['@database']
+    tags:
+      - { name: backend_overridable }

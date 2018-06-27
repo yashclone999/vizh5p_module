@@ -1,0 +1,6 @@
+vizh5p.plot:
+  title: 'VizH5P Form'
+  description: 'Form for result analysis'
+  parent: system.admin_config_system
+  route_name: vizh5p.plot
+  menu_name: devel

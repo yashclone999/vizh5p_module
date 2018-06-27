@@ -1,0 +1,11 @@
+<?php
+/**
+ * This is a hook to modify the library of h5p module and attach our capture.js in it.
+ */
+function vizh5p_library_info_alter(&$libraries, $extension) {
+	if(isset($libraries['h5p.integration'])){				//If it is initialized then
+		$h5ppath = '/' . drupal_get_path('module', 'h5p') . '/js';		//getting relative path
+		$vizh5ppath = '/' . drupal_get_path('module', 'vizh5p') . '/js';
+		$libraries['h5p.integration']['js'] = [$h5ppath .'/h5p-integration.js' => [],$vizh5ppath . '/Capture.js' => [],];	//attaching the js
+	}
+}

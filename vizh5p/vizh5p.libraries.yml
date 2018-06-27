@@ -1,0 +1,14 @@
+h5pCapture:
+  version: 1.x
+  js:
+    js/Capture.js: {}
+
+plotlylib:
+  version: 1.x
+  js:
+    js/plotly-latest.min.js: {}
+    
+Graph:
+  version: 1.x
+  js:
+    js/Graph.js: {}

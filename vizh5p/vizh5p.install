@@ -1,0 +1,43 @@
+<?php
+
+function vizh5p_schema() {
+
+ $schema['vizh5p'] = array(
+
+   'description' => 'XAPI log table.',
+   'fields' => array(
+   	 'time' => array(
+   	   'description' => 'date time stamp',
+       'type' => 'varchar',
+       'length' => 255,
+       'not null' => TRUE,
+   	 ),
+
+     'content_id' => array(
+       'description' => 'Content-ID',
+       'type' => 'varchar',
+       'length' => 255,
+       'not null' => TRUE,
+       'default' => '',
+     ),
+
+	    'actor' => array(
+	      'description' => 'Username',
+	      'type' => 'varchar',
+	      'length' => 255,
+	      'not null' => TRUE,
+	      'default' => '',
+	    ),    
+
+	    'verb' => array(
+	      'description' => 'nature of interaction',
+	      'type' => 'varchar',
+	      'not null' => TRUE,
+	      'length' => 255,
+	    ),
+  ),
+
+ );
+
+ return $schema;
+}

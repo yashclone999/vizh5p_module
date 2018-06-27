@@ -1,0 +1,7 @@
+core: 8.x
+description: Visualizing H5P interactions
+name: VizH5P
+package: Custom
+type: module
+dependencies:
+  - h5p:h5p
